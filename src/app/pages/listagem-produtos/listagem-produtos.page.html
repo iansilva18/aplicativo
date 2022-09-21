@@ -6,8 +6,16 @@
 
 <ion-content>
     <ion-list>
-        <ion-item *ngFor="let todosProdutos of todosProdutos" routerLink="/detalhes-produtos/{{todosProdutos.id}}">
-            {{todosProdutos.nome}}
-        </ion-item>
+
+        <ion-back-button defaultHref="home">voltar</ion-back-button>
     </ion-list>
+
+    <ion-fab vertical="top" horizontal="end" slot="fixed" edge="true">
+        <ion-fab-button routerlink="/listagem-produtos/-1">
+            <ion-icon name="add"></ion-icon>
+
+    </ion-fab>
+
+
+    </ion-fab>
 </ion-content>

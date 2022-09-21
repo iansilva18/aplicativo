@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'listagem-produtos',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -16,7 +16,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/listagem-produtos/listagem-produtos.module').then( m => m.ListagemProdutosPageModule)
   },
   {
-    path: 'detalhes-produtos/:id',
+    path: ' ',
     loadChildren: () => import('./pages/detalhes-produtos/detalhes-produtos.module').then( m => m.DetalhesProdutosPageModule)
   },
  
